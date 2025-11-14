@@ -3,7 +3,7 @@
 
 int main() {
     char str[100];
-    char ch;
+    char n;
     int i, j;
 
     printf("Nhap chuoi: ");
@@ -11,10 +11,10 @@ int main() {
     str[strcspn(str, "\n")] = 0;
 
     printf("Nhap ky tu can xoa: ");
-    scanf("%c", &ch);
+    scanf("%c", &n);
 
     for (i = 0; str[i] != '\0'; i++) {
-        if (str[i] == ch) {
+        if (str[i] == n) {
             for (j = i; str[j] != '\0'; j++) {
                 str[j] = str[j + 1];
             }
@@ -26,4 +26,5 @@ int main() {
 
     return 0;
 }
+
 
